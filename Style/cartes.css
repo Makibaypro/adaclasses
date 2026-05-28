@@ -1,6 +1,7 @@
 
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #133434;
 }
 
 main {
@@ -25,6 +27,14 @@ h1 {
     padding: 0;
 }
 
+a:hover {
+    background-color: 	#89d0db;
+    border: 3px solid #896a21;
+    padding: 5px;
+    box-shadow: 3px 3px #555d55;
+    border-radius: 10px;
+}
+
 #header {
     display: flex;
 
@@ -34,10 +44,31 @@ h1 {
     width: 150px;
 }
 
+#photoGMC {
+    mix-blend-mode: multiply;
+}
+
 #imgBarracuda {
-    height: 100%;
-    width: 100%;
+    width: 300px;
     object-fit: cover;
+}
+
+.linkDecorationRemove {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.shadowObject {
+    filter: drop-shadow(4px 4px 4px rgb(0, 91, 133));
+    
+}
+
+.button {
+    background-color: 	#63979f;
+    border: 3px solid #cfe3d1;
+    padding: 5px;
+    box-shadow: 3px 3px #555d55;
+    border-radius: 10px;
 }
 
 .sectionPresentation {
@@ -50,11 +81,13 @@ h1 {
 }
 
 .presentation {
-    background-color: greenyellow;
+    background-color: #5e746b;
     text-align: justify;
     margin: 25px;
     width: fit-content;
     font-size: 16px;
+    padding: 0 15px;
+    border-radius: 4px 40px 4px 40px;
 }
 
 .topBorder {
@@ -67,8 +100,8 @@ h1 {
 }
 
 
-.pinkBloc {
-    background-color: pink;
+nav {
+    background-color: #5e746b;
     height: 75px;
     display: flex;
     justify-content: space-between;
