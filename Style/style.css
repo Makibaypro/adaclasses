@@ -96,7 +96,6 @@ a:hover {
     border-bottom: 3px solid rgb(41, 40, 40);
 }
 
-
 nav {
     background-color: #5e746b;
     height: 75px;
@@ -104,7 +103,7 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0 75px;
+    padding: 0px 75px;
 }
 
 footer {
@@ -117,14 +116,7 @@ footer {
     padding: 5px 0;
 }
 
-.greenBloc {
-    background-color: rgb(0, 128, 0);
-    display: flex;
-    width: fit-content;
-    padding: 8px 30px;
-    align-items: center;
-    border-radius: 40px 6px 8px 20px;
-}
+
 
 .centered {
     display: flex;
