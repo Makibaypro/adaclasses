@@ -10,7 +10,11 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #133434;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./../assets/Ateam.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 main {
@@ -18,13 +22,33 @@ main {
 }
 
 nav {
-    position : sticky;
+
+    opacity: 80%;
     top: 0;
+    background-color: #797a7a;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 75px;
 }
 
 h1 {
     margin :0;
     padding: 0;
+}
+
+footer {
+    background-color: #797a7a;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px 0px;
+    padding: 10px 0;
+    opacity: 80%;
 }
 
 a:hover {
@@ -49,6 +73,7 @@ a:hover {
     width: 300px;
     object-fit: cover;
     border-radius: 40px 4px 40px 4px;
+
 }
 
 .linkDecorationRemove {
@@ -57,17 +82,16 @@ a:hover {
 }
 
 .shadowObject {
-    filter: drop-shadow(4px 4px 4px rgb(0, 91, 133));
+    filter: drop-shadow(4px 4px 4px rgb(85, 0, 0));
     
 }
 
 .button {
-    background-color: 	#63979f;
-    border: 3px solid #cfe3d1;
+    background-color: 	#89d0db;
+    border: 3px solid #177166;
     padding: 5px;
     box-shadow: 3px 3px #555d55;
     border-radius: 10px;
-    
 }
 
 .section {
@@ -81,8 +105,8 @@ a:hover {
 }
 
 .carte {
-    background-color: #5e746b;
-    border-radius: 4px 40px 4px 40px;
+    background-color: #242424;
+    border-radius: 40px 40px 40px 40px;
     display: flex;
     position: relative;
     margin: 20px 20px;
@@ -90,8 +114,9 @@ a:hover {
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    border: 2px solid #63979f;
+    border: 2px solid rgb(146, 0, 0);
     overflow: hidden;
+    opacity: 90%;
     
 }
 
@@ -114,21 +139,15 @@ a:hover {
     border-bottom: 3px solid rgb(41, 40, 40);
 }
 
-
-nav {
-    background-color: #5e746b;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 75px;
-}
-
-
 .centered {
     display: flex;
     justify-content: center;
+}
+
+#nationnaliteCard:hover {
+    scale: 110%;
+    z-index: 10;
+    position: relative;
 }
 
 #nationnaliteCard:hover > #nationnaliteText{
@@ -138,7 +157,8 @@ nav {
 
 #nationnaliteText {
     transition: transform 0.2s;
-    scale: calc(150%);
+    text-align: center;
+    scale: 150%;
 }
 
 #nationnaliteCard:hover > #imgNationnalite {
@@ -150,4 +170,88 @@ nav {
     width: 30%;
     opacity: 0;
     transition: opacity 0.2s ;
+}
+
+#metierCard:hover {
+    scale: 110%;
+    z-index: 10;
+    position: relative;
+}
+
+#metierCard:hover > #metierText {
+    transform: translateY(-50px);
+}
+
+#metierText {
+    transition: transform 0.2s;
+    scale: 150%;
+}
+
+#metierCard:hover > #metierTextResult {
+    opacity: 1;
+}
+
+#metierTextResult {
+    scale: 125%;
+    position:absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#signeCard:hover {
+    scale: 110%;
+    z-index: 10;
+    position: relative;
+}
+
+#signeCard:hover > #signeText {
+    transform: translateY(-50px);
+}
+
+#signeText {
+    transition: transform 0.2s;
+    text-align: center;
+    scale: 150%;
+}
+
+#signeCard:hover > #signeTextResult {
+    opacity: 1;
+}
+
+#signeTextResult {
+    scale: 150%;
+    position:absolute;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#qualiteCard:hover {
+    scale: 110%;
+    z-index: 10;
+    position: relative;
+}
+
+#qualiteCard:hover > #qualiteText {
+    transform: translateY(-50px);
+}
+
+#qualiteText {
+    transition: transform 0.2s;
+    text-align: center;
+    scale: 150%;
+}
+
+#qualiteCard:hover > #qualiteTextResult {
+    opacity: 1;
+}
+
+#qualiteTextResult {
+    text-align: justify;
+    align-items: center;
+    scale: 90%;
+    padding: 10px ;
+    position:absolute;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
