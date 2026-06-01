@@ -22,7 +22,8 @@ main {
 }
 
 nav {
-
+    position: sticky;
+    z-index: 100;
     opacity: 80%;
     top: 0;
     background-color: #797a7a;

@@ -23,6 +23,8 @@ main {
 }
 
 nav {
+    position: sticky;
+    z-index: 100;
     opacity: 80%;
     top: 0;
     background-color: #797a7a;
@@ -34,12 +36,22 @@ nav {
     padding: 0px 70px;
 }
 
+hr {
+    border: 3px double  rgb(146, 0, 0);
+    margin-top: 150px;
+}
+
 h1 {
     margin :0;
     padding: 0;
 }
 
 footer {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     background-color: #797a7a;
     height: 35px;
     display: flex;
@@ -71,6 +83,7 @@ a:hover {
 #lienBloc {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 #blocImageIndex {
@@ -82,8 +95,8 @@ a:hover {
 
 #quoteBloc {
     border: 3px solid rgb(146, 0, 0);
-    border-radius: 20px 20px 20px 4px;
-    margin: 0px 40px;
+    border-radius: 20px;
+    margin: 0px 40px 60px 40px;
     padding: 10px;
     background-color: #242424;
     opacity: 80%;
@@ -114,6 +127,10 @@ a:hover {
     object-fit: cover;
     border-radius: 40px 4px 40px 4px;
     border: 3px solid rgb(146, 0, 0);
+}
+
+#citationTitle {
+    text-align: center;
 }
 
 .linkDecorationRemove {
@@ -166,4 +183,19 @@ a:hover {
 .centered {
     display: flex;
     justify-content: center;
+}
+
+.sectionCitation {
+    display: flex;
+    flex-direction: column;
+}
+
+.citationSide:nth-child(even) {
+    align-self: flex-end;
+    border-radius: 20px 20px 20px 4px;
+}
+
+.citationSide:nth-child(odd) {
+    align-self: flex-start;
+    border-radius: 20px 4px 20px 20px;
 }
