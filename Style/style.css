@@ -30,20 +30,18 @@ nav {
     background-color: #797a7a;
     height: 75px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     align-items: center;
     padding: 0px 70px;
 }
 
-hr {
-    border: 3px double  rgb(146, 0, 0);
-    margin-top: 150px;
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    margin :0;
-    padding: 0;
+h2 {
+    font-family: "Black Ops One";
+    
 }
 
 footer {
@@ -51,28 +49,44 @@ footer {
     z-index: 99;
     width: 100%;
     bottom: 0;
-    left: 0;
     background-color: #797a7a;
-    height: 35px;
+    height: 50px;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 0;
     opacity: 80%;
 }
 
-a:hover {
-    background-color: 	#89d0db;
-    border: 3px solid rgb(197, 0, 0);
-    padding: 5px;
-    box-shadow: 3px 3px #555d55;
-    border-radius: 10px;
+a {
+    text-decoration: none;
+    color : white;
 }
+
+a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 125%;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 40px 0px 0px 0px;
+    border: 3px solid rgb(146, 0, 0);
+}
+
 
 #header {
     display: flex;
+    flex: 1;
+    text-align: center;
+    min-width: 0;
+    font-family:"Black Ops One";
+}
 
+#logo {
+    flex: 1;
 }
 
 #photoGMC {
@@ -83,7 +97,13 @@ a:hover {
 #lienBloc {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#figcaptionBG {
+    background-color: #242424;
+    color: white;
 }
 
 #blocImageIndex {
@@ -125,12 +145,29 @@ a:hover {
 #imgBarracuda {
     width: 300px;
     object-fit: cover;
-    border-radius: 40px 4px 40px 4px;
-    border: 3px solid rgb(146, 0, 0);
+    border-radius: 40px 0px 0px 0px;
+    border: 3px;
 }
 
 #citationTitle {
     text-align: center;
+}
+
+#separatorMid {
+    border: 3px double  rgb(146, 0, 0);
+    margin-top: 150px;
+}
+
+#separatorButton {
+    transform: skewX(-20deg);
+    margin: 10px;
+}
+
+.linkFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .linkDecorationRemove {
@@ -143,9 +180,20 @@ a:hover {
 }
 
 .button {
-    background-color: 	#63979f;
+    background-color: 	#242424aa;
     border: 3px solid #cfe3d1;
     padding: 5px;
+    box-shadow: 3px 3px #555d55;
+    border-radius: 10px 10px 10px 2px;
+    transform: skewX(-20deg);
+    transition: padding 0.3s ease;
+    overflow: hidden;
+}
+
+.button:hover {
+    padding: 5px 20px;
+    background-color: #102f26;
+    border: 3px solid rgb(197, 0, 0);
     box-shadow: 3px 3px #555d55;
     border-radius: 10px;
 }
@@ -198,4 +246,25 @@ a:hover {
 .citationSide:nth-child(odd) {
     align-self: flex-start;
     border-radius: 20px 4px 20px 20px;
+}
+
+@media (max-width : 768px) {
+
+    h1 {
+        font-size: 100%;
+    }
+
+    #blocImageIndex {
+        align-self: center;
+    }
+
+    .sectionPresentation {
+        flex-direction: column;
+    }
+
+    .citationSide:nth-child(even),.citationSide:nth-child(odd) {
+            align-self: center;
+    }
+
+
 }

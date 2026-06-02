@@ -32,33 +32,46 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0px 75px;
+    padding: 0px 70px;
 }
 
 h1 {
     margin :0;
     padding: 0;
+    font-family: "Black Ops One";
+}
+
+h2 {
+    font-family: "Black Ops One";
+    
+}
+
+h3 {
+    font-family: "Black Ops One";
 }
 
 footer {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
     background-color: #797a7a;
-    height: 35px;
+    height: 50px;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 5px 0px;
-    padding: 10px 0;
     opacity: 80%;
 }
 
-a:hover {
-    background-color: 	#89d0db;
-    border: 3px solid #896a21;
-    padding: 5px;
-    box-shadow: 3px 3px #555d55;
-    border-radius: 10px;
+a {
+    text-decoration: none;
+    color : white;
 }
+
+a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 125%;
+    filter: drop-shadow(4px 4px 4px black);
+}   
 
 #header {
     display: flex;
@@ -70,6 +83,23 @@ a:hover {
     mix-blend-mode: multiply;
 }
 
+#lienBloc {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#separatorButton {
+    transform: skewX(-20deg);
+}
+
+.linkFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
 .cartesIMG {
     width: 300px;
     object-fit: cover;
@@ -78,7 +108,6 @@ a:hover {
 }
 
 .linkDecorationRemove {
-    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -88,9 +117,20 @@ a:hover {
 }
 
 .button {
-    background-color: 	#89d0db;
-    border: 3px solid #177166;
+    background-color: 	#242424aa;
+    border: 3px solid #cfe3d1;
     padding: 5px;
+    box-shadow: 3px 3px #555d55;
+    border-radius: 10px 10px 10px 2px;
+    transform: skewX(-20deg);
+    transition: padding 0.3s ease;
+    overflow: hidden;
+}
+
+.button:hover {
+    padding: 5px 20px;
+    background-color: #102f26;
+    border: 3px solid rgb(197, 0, 0);
     box-shadow: 3px 3px #555d55;
     border-radius: 10px;
 }

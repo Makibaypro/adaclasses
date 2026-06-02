@@ -4,14 +4,19 @@
         <meta charset="UTF-8">
         <title>Adapage — Barracuda</title>
         <link rel="stylesheet" href="./../Style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black Ops One">
     </head>
         <body>
             <!-- Ta page se construit ici -->
             <nav>
-                <img id="photoGMC" src="./../assets/GMC_Vandura-removebg-preview.png" alt="Truck">
-                <header><h1>Bosco "Barracuda" Baracus</h1></header>
+                <article id="logo">
+                    <img id="photoGMC" src="./../assets/GMC_Vandura-removebg-preview.png" alt="Truck">
+                </article>
+                <header id="header"><h1>Bosco "Barracuda" Baracus</h1></header>
                 <section id="lienBloc">
-                    <a class="button" href="#citation" title="Citation"><span class="linkDecorationRemove">Citations</span></a>               
+                    <a class="button" href="#citation" title="Citation"><span class="linkDecorationRemove">Citations</span></a> 
+                    <hr id="separatorButton" />              
                     <a class="button" href="./cartes.html" title="Cartes"><span class="linkDecorationRemove">Cartes</span></a> 
                 </section>
             </nav>
@@ -19,7 +24,8 @@
                 <section class="sectionPresentation">
                         <article id="blocImageIndex">
                                 <figure>
-                                    <img id="imgBarracuda" class="shadowObject" src="./../assets/Barracuda1.jpeg" alt="Mister T dans le role de Barracuda">
+                                    <img  id="imgBarracuda"  src="./../assets/Barracuda1.jpeg" alt="Mister T dans le role de Barracuda" />
+                                    <figcaption id="figcaptionBG">Mister T dans le rôle de Barracuda.</figcaption>
                                 </figure>
                         </article>
                         <article class="presentation">
@@ -42,7 +48,7 @@
                                 </p>
                         </article>
                 </section>
-                <hr />
+                <hr id="separatorMid" />
                 <section class="sectionCitation" id="citation">
                         <h2 id="citationTitle">Citations</h2>
                         <article id="blocImageIndex" class="citationSide">
@@ -87,11 +93,11 @@
                 </section>
             </main>
             <footer>
-                <article>
-                    <p>contacts</p>
+                <article class="linkFooter">
+                    <p>contacts : joejoecarambar@hotmail.fr</p>
                 </article>
-                <article>
-                    <p>git link</p>
+                <article class="linkFooter">
+                    <a href="https://github.com/adatechschool" title="gitHub"><span>GitHub : https://github.com/adatechschool</span></a>
                 </article>
             </footer>
         </body>
