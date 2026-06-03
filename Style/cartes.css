@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -7,6 +11,7 @@ html {
 body {
     margin : 0;
     padding : 0;
+    width: 100%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -25,6 +30,7 @@ main {
 nav {
     position: sticky;
     z-index: 100;
+    width: 100%;
     opacity: 80%;
     top: 0;
     background-color: #797a7a;
@@ -63,6 +69,11 @@ footer {
     opacity: 80%;
 }
 
+iframe {
+    margin: 0;
+    padding: 0;
+}
+
 #a {
     text-decoration: none;
     color : #555d55;
@@ -78,14 +89,9 @@ footer {
     opacity: 1;
 }
 
-iframe {
-    margin: 0;
-    padding: 0;
-}
-
 #header {
     display: flex;
-    flex: 1;
+    flex: 2;
     text-align: center;
     min-width: 0;
     font-family:"Black Ops One";
@@ -115,97 +121,6 @@ iframe {
 #separatorButton {
     transform: skewX(-20deg);
     margin: 10px;
-}
-.linkFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
-.cartesIMG {
-    width: 300px;
-    object-fit: cover;
-    border-radius: 40px 4px 40px 4px;
-
-}
-
-.linkDecorationRemove {
-    text-decoration: none;
-    opacity: 50%;
-}
-
-.shadowObject {
-    filter: drop-shadow(4px 4px 4px rgb(85, 0, 0));
-    
-}
-
-.button:hover ~ #phareVoiture  {
-    opacity: 75%;
-}
-
-.button:hover {
-    border: 3px solid white;
-}
-
-.button {
-    background-color: 	black;
-    border: 3px solid #262926;
-    padding: 5px;
-    box-shadow: 3px 3px #555d55;
-    border-radius: 10px;
-    transform: skewX(-20deg);
-    overflow: hidden;
-    z-index: 5;
-}
-
-.section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    margin: 25px;
-    margin-top: 50px;
-    align-items: stretch;
-    width: cacl(100% - 1rem);
-}
-
-.carte {
-    background-color: #242424;
-    border-radius: 40px 40px 40px 40px;
-    display: flex;
-    position: relative;
-    margin: 20px 20px;
-    padding: 100px 0px;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(146, 0, 0);
-    overflow: hidden;
-    opacity: 90%;
-}
-
-.presentation {
-    background-color: #5e746b;
-    text-align: justify;
-    margin: 25px;
-    width: fit-content;
-    font-size: 16px;
-    padding: 0 15px;
-    border-radius: 4px 40px 4px 40px;
-}
-
-.topBorder {
-    border-top: 3px solid rgb(41, 40, 40);
-    padding-top: 20px;
-}
-
-.bottomBorder {
-    border-bottom: 3px solid rgb(41, 40, 40);
-}
-
-.centered {
-    display: flex;
-    justify-content: center;
 }
 
 #phareVoiture {
@@ -356,6 +271,98 @@ iframe {
     filter: drop-shadow(4px 4px 4px black);
 }
 
+.linkFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.cartesIMG {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 40px 4px 40px 4px;
+
+}
+
+.linkDecorationRemove {
+    text-decoration: none;
+    opacity: 50%;
+}
+
+.shadowObject {
+    filter: drop-shadow(4px 4px 4px rgb(85, 0, 0));
+    
+}
+
+.button:hover ~ #phareVoiture  {
+    opacity: 75%;
+}
+
+.button:hover {
+    border: 3px solid white;
+}
+
+.button {
+    background-color: 	black;
+    border: 3px solid #262926;
+    padding: 5px;
+    box-shadow: 3px 3px #555d55;
+    border-radius: 10px;
+    transform: skewX(-20deg);
+    overflow: hidden;
+    z-index: 5;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: 25px;
+    margin-top: 50px;
+    align-items: stretch;
+    width: calc(100% - 1rem);
+}
+
+.carte {
+    background-color: #242424;
+    border-radius: 40px 40px 40px 40px;
+    display: flex;
+    position: relative;
+    margin: 20px 20px;
+    padding: 100px 0px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(146, 0, 0);
+    overflow: hidden;
+    opacity: 90%;
+}
+
+.presentation {
+    background-color: #5e746b;
+    text-align: justify;
+    margin: 25px;
+    width: fit-content;
+    font-size: 16px;
+    padding: 0 15px;
+    border-radius: 4px 40px 4px 40px;
+}
+
+.topBorder {
+    border-top: 3px solid rgb(41, 40, 40);
+    padding-top: 20px;
+}
+
+.bottomBorder {
+    border-bottom: 3px solid rgb(41, 40, 40);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width : 768px) {
 
     h1 {
@@ -377,7 +384,7 @@ iframe {
         margin: 25px;
         margin-top: 50px;
         align-items: stretch;
-        width: cacl(100% - 1rem);
+        width: calc(100% - 1rem);
     }
 
     .carte {

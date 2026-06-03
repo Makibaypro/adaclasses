@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -7,10 +11,12 @@ html {
 body {
     margin : 0;
     padding : 0;
+    width: 100%;
     display: flex;
+    width: 100%;
     min-height: 100vh;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("./../assets/Ateam.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./../assets/Ateam.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -37,6 +43,7 @@ nav {
 h1 {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 h2 {
@@ -56,6 +63,15 @@ footer {
     opacity: 80%;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 40px 0px 0px 0px;
+    border: 3px solid rgb(146, 0, 0);
+}
+
 #a {
     text-decoration: none;
     color : #555d55;
@@ -72,19 +88,9 @@ footer {
     opacity: 1;
 }
 
-figure {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 40px 0px 0px 0px;
-    border: 3px solid rgb(146, 0, 0);
-}
-
-
 #header {
     display: flex;
-    flex: 1;
+    flex: 2;
     text-align: center;
     min-width: 0;
     font-family:"Black Ops One";
@@ -147,7 +153,6 @@ figure {
 #quoteName {
     text-align: right;
     margin-top: 0px;
-    text-align: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

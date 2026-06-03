@@ -1,4 +1,4 @@
-# [Nom de ton Projet]
+# ADAPage - Bosco "Barracuda" Baracus
 
 Une phrase d'accroche simple et percutante qui décrit l'objectif du projet.
 
