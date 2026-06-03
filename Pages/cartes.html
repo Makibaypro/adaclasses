@@ -8,12 +8,16 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black Ops One">
     </head>
         <body>
-        <!-- Ta page se construit ici -->
             <nav>
-                <img id="photoGMC" src="./../assets/GMC_Vandura-removebg-preview.png" alt="Truck">
-                <header><h1>Bosco "Barracuda" Baracus</h1></header>
+                <article id="logo">
+                    <img id="photoGMC" src="./../assets/GMC_Vandura-removebg.png" alt="Truck">
+                </article>
+                <header id="header"><h1>Bosco "Barracuda" Baracus</h1></header>
                 <section id="lienBloc">
-                    <a class="button" href="./index.html" title="index"><span class="linkDecorationRemove">Accueil</span></a>
+                    <a id="a" class="button" href="#video" title="Video"><span class="linkDecorationRemove">Video</span></a> 
+                    <hr id="separatorButton" />
+                    <a id="a" class="button" href="./index.html" title="index"><span class="linkDecorationRemove">Accueil</span></a>
+                    <div id="phareVoiture" ><!--Element bloc decoratif phare voiture--></div>
                 </section>
             </nav>
                 <main>
@@ -37,13 +41,18 @@
                                 de réparer un moteur</p>
                         </article>
                     </section>
+                    <hr id="separatorMid" />
+                    <section>
+                        <h2 id="video">Video</h2>
+                        <iframe id="videoBloc" width="420" height="345" src="https://www.youtube-nocookie.com/embed/UgYr-Mz09ms?si=rUNmMNvdFYqmYcDd"></iframe>
+                    </section>
                 </main>
             <footer>
                 <article class="linkFooter">
                     <p>contacts : joejoecarambar@hotmail.fr</p>
                 </article>
                 <article class="linkFooter">
-                    <a href="https://github.com/adatechschool" title="gitHub"><span>GitHub : https://github.com/adatechschool</span></a>
+                    <a id="lienGithub" href="https://github.com/adatechschool" title="gitHub"><span>GitHub : https://github.com/adatechschool</span></a>
                 </article>
             </footer>
         </body>
