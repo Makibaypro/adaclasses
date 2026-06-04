@@ -3,11 +3,13 @@
 Une phrase d'accroche simple et percutante qui décrit l'objectif du projet.
 
 Voici le rendu final du projet :
-![Capture d'écran du projet](path/to/preview-image.png)
+![./assets/ScreenShotIndex.png](path/to/preview-image.png)
 
 ## Présentation
 
-Ce projet a été réalisé dans le cadre de ... (à vous de compléter)
+Ce projet a été réalisé dans le cadre de l'exercice ADAPage. Il fallait créer une page index et cartes en HTML.
+Il fallait aussi créer deux fichier CSS un pour chaque page. Comprendre et s'entrainer dans l'utilisation des
+deux languages.
 
 ## Fonctionnalités
 
